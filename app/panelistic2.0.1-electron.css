@@ -1,4 +1,4 @@
-/*version: panelistic 2.0.1 for Electron apps*/
+/*version: panelistic 2.0.2 for Electron apps*/
 /*author: cotzhang@github*/
 
 * {
@@ -85,6 +85,15 @@ body{
 	padding: 8px;
 	height: calc(100% - 46px);
 	overflow:auto;
+}
+
+#panelistic_content_sidebar{
+	height: 100%;
+	position: relative;
+	display: inline-block;
+	width: calc(100% - 204px);
+	background-color: #ffffff88;
+	vertical-align: top;
 }
 
 ::-webkit-scrollbar {
@@ -239,6 +248,17 @@ select option{
 	margin-top: 8px;
 	margin-bottom: 8px;
 	border: solid 1px #ffffff00;
+}
+
+#panelistic_sidebar{
+	position: relative;
+	left: 0px;
+	top: 0px;
+	bottom: 0px;
+	width: 200px;
+	height: 100%;
+	display: inline-block;
+	vertical-align: top;
 }
 
 @media (prefers-color-scheme: dark) {
