@@ -18,25 +18,24 @@ electron.app.on('ready', () => {
 
 function spawnWindow(){
 	win = new glasstron.BrowserWindow({
-		width: 800,
-		height: 600,
+		width: 600,
+		height: 400,
 		frame: false,
 		resizable:false,
 		show:false,
 		hasShadow:true,
 		webPreferences:{
 	  		nodeIntegration: true, 
-	  		contextIsolation: false,
-	  		webviewTag:true
+	  		contextIsolation: false
     	}
 	});
-	win.blurType = "blurbehind";
+	win.blurType = "acrylic";
 	win.setBlur(true);
 	win.loadFile('app/index.html')
 	win.setHasShadow(true)
 	win.removeMenu() 
 	//win.setAlwaysOnTop("alwaysOnTop")
-	win.webContents.openDevTools({mode:"detach"})
+	//win.webContents.openDevTools({mode:"detach"})
 	remote.enable(win.webContents)
 	win.webContents.on('did-finish-load', () => {
 		win.show();

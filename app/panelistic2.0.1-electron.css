@@ -36,7 +36,7 @@ body{
 	bottom: 0px;
 	position: absolute;
 	color: black;
-	background-color: #eeeeee99;
+	background-color: #ffffffaa;
 }
 
 #panelistic_titlebar{
@@ -85,15 +85,6 @@ body{
 	padding: 8px;
 	height: calc(100% - 46px);
 	overflow:auto;
-}
-
-#panelistic_content_sidebar{
-	height: 100%;
-	position: relative;
-	display: inline-block;
-	width: calc(100% - 204px);
-	background-color: #ffffff88;
-	vertical-align: top;
 }
 
 ::-webkit-scrollbar {
@@ -250,20 +241,9 @@ select option{
 	border: solid 1px #ffffff00;
 }
 
-#panelistic_sidebar{
-	position: relative;
-	left: 0px;
-	top: 0px;
-	bottom: 0px;
-	width: 200px;
-	height: 100%;
-	display: inline-block;
-	vertical-align: top;
-}
-
 @media (prefers-color-scheme: dark) {
 	#panelistic_window{
-		background-color: #11111188;
+		background-color: #11111155;
 		color: white;
 	}
 	.panelistic_controlbtn{
@@ -292,4 +272,25 @@ select option{
 	input:active,select:active,.panelistic_checkbox:active,textarea:active{
 		background-color: #66666655;
 	}
+}
+
+#panelistic_content_sidebar{
+	height: 100%;
+	position: relative;
+	display: inline-block;
+	width: calc(100% - 204px);
+	background-color: #ffffff33;
+	vertical-align: top;
+}
+
+
+#panelistic_sidebar{
+	position: relative;
+	left: 0px;
+	top: 0px;
+	bottom: 0px;
+	width: 200px;
+	height: 100%;
+	display: inline-block;
+	vertical-align: top;
 }
