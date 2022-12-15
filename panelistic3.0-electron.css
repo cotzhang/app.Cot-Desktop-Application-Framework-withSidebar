@@ -24,6 +24,7 @@ body{
 	font-family: "misans";
 	font-weight: normal;
 	user-select:none;
+	overflow: hidden;
 }
 
 ::selection {
@@ -131,7 +132,7 @@ body{
 
 #panelistic_content{
 	padding: 8px;
-	height: calc(100% - 46px);
+	height: 100%;
 	overflow:auto;
 }
 
@@ -354,13 +355,12 @@ select option{
 
 
 #panelistic_content_sidebar{
-	height: calc(100% - 30px);
+	height: 100%;
 	position: absolute;
 	display: inline-block;
 	width: calc(100% - 200px);
 	background-color: #ffffff33;
 	vertical-align: top;
-	top: 30px;
 	left: 200px;
 }
 
@@ -368,10 +368,9 @@ select option{
 #panelistic_sidebar{
 	position: absolute;
 	left: 0px;
-	top: 30px;
 	bottom: 0px;
 	width: 200px;
-	height: calc(100% - 30px);
+	height: 100%;
 	display: inline-block;
 	vertical-align: top;
 }
